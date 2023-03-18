@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:wght@300;400&display=swap');
+
+body{
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: whitesmoke;
+      overflow-x: hidden;
+}
+#header{
+         background: #1669f7;
+         padding: 10px;
+}
+#header h1{
+            display: inline;
+            font-family: 'Cedarville Cursive', cursive;
+}
+#header ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+}
+#header ul li{
+                padding: 10px;
+                float: right;
+                color: white;
+}
+#header ul li:hover{
+                     opacity: .7;
+                     cursor: pointer;
+}
+#letter{
+         padding: 10px;
+         border: 2px solid black;
+         margin: 100px;
+         border-radius: 10px;
+}
+#letter input, #letter textarea{
+                                padding: 10px;
+                                border-radius: 10px;
+                                outline: none;
+                                border: none;
+                                margin: 10px 0;
+                                background: #1b5486;
+                                color: white;
+                                width: 20%;
+}
+#letter textarea{
+                    width: 90%;
+                    text-align: justify;
+                    resize: none;
+}
+#letter input:focus, #letter textarea:focus{
+                                            box-shadow: -5px 5px grey;
+                                            background: #1671c0d1;
+                                            font-size: 15px;
+                                            font-weight: bold;
+                                            transition: .5s;
+}
+#letter input::placeholder, #letter textarea::placeholder{
+                                                            color: white;
+}
+#button-container{
+                    text-align: center;
+                    background: transparent;
+}
+#button-container button{
+                          background: transparent;
+                          border: none;
+                          padding: 10px;
+                          font-size: 24px;
+                          cursor: pointer;
+                          border-radius: 10px;
+                          text-decoration: underline;
+}
+#button-container button:hover{
+                                background: #2e2c2c;
+                                color: whitesmoke;
+                                box-shadow: -5px 5px black;
+                                transition: .5s;
+}
+#footer{
+         background: #1669f7;
+         padding: 10px;
+}
+#footer h1{
+            font-family: 'Cedarville Cursive', cursive;
+            display: inline;
+            font-size: 35px;
+}

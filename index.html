@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Letter Maker</title>
+
+        <link rel="stylesheet" href="/css/styles.css">
+
+    </head>
+
+    <body>
+
+        <header id="header">
+
+            <h1>Letter Maker</h1>
+
+            <ul>
+
+                <li>Review</li>
+
+                <li>Contact</li>
+
+                <li>About</li>
+
+            </ul>
+
+        </header>
+
+        <main id="main">
+
+            <h2 style="text-align: center; font-size: 50px;">Sick Leave</h2>
+
+            <div id="letter">
+
+                <p id="date-container">
+                    
+                    Date: <input type="date" name="date" id="date"> 
+                
+                </p>
+<br>
+                <p id="receiver-container">To
+<br>
+                    <input type="text" name="receiver_name" id="receiver_name" placeholder="Enter receiver's name here" spellcheck="false" autocomplete="false"> 
+<br>
+                    <input type="text" name="receiver_address" id="receiver_address" placeholder="Enter receiver's address here" spellcheck="false" autocomplete="false">
+                
+                </p>
+<br>
+                <p id="subject-container">Subject: <input type="text" name="subject" id="subject" placeholder="Enter the letter's subject here" spellcheck="false" autocomplete="false"> </p>
+<br>
+                <p id="letter-body-container">
+
+                    <textarea name="letter-body" id="letter-body" rows="10" placeholder="Enter the contents of the letter here" spellcheck="false" autocomplete="false"></textarea>
+
+                </p>
+<br>
+                <p id="sender-container">
+
+                    Yours sincerely,
+<br><br><br><br><br>
+                    <span>Parent's Signature</span>
+<br><br><br>
+                    Sender's Name: <input type="text" name="sender-name" id="sender-name" placeholder="Enter your name here" spellcheck="false" autocomplete="false">
+
+                </p>
+
+            </div>
+<br>
+                <div id="button-container">
+
+                    <button onclick="window.print();">Print Letter</button>
+
+                </div>
+<br><br>
+        </main>
+
+        <footer id="footer">
+
+            <h1>Letter Maker</h1>
+
+        </footer>
+        
+    </body>
+
+</html>
