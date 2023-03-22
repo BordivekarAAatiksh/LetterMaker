@@ -79,6 +79,9 @@ body{
                                 box-shadow: -5px 5px black;
                                 transition: .5s;
 }
+#letter-preview{
+                  padding: 0 50px;
+}
 #footer{
          background: #1669f7;
          padding: 10px;

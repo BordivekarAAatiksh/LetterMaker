@@ -13,6 +13,8 @@
 
         <link rel="stylesheet" href="/css/styles.css">
 
+        <script src="js/script.js"></script>
+
     </head>
 
     <body>
@@ -35,7 +37,7 @@
 
         <main id="main">
 
-            <h2 style="text-align: center; font-size: 50px;">Sick Leave</h2>
+            <h2 style="text-align: center; font-size: 50px;">Medical Sick Leave By Student (School)</h2>
 
             <div id="letter">
 
@@ -57,29 +59,71 @@
 <br>
                 <p id="letter-body-container">
 
-                    <textarea name="letter-body" id="letter-body" rows="10" placeholder="Enter the contents of the letter here" spellcheck="false" autocomplete="false"></textarea>
+                    Dear Sir/Ma'am,
+<br><br>
+                    I am writing this letter to inform you of a medical issue which renders me unable  to attend school. I am suffering from <input type="text" name="disease" id="disease" placeholder="Enter the disease here" spellcheck="false" autocomplete="false"> and my doctor has advised me <input type="number" name="days" id="days" placeholder="Enter the no. of days here" autocomplete="off"> days of complete bed rest to help me recover from the uneasiness quickly.
+<br>
+                    I will be very thankful if you will grant me a <input type="number" name="ask_days" id="ask_days" placeholder="Enter the no. of days here" autocomplete="off"> day(s) leave from <input type="date" name="leave_date" id="leave_date">. I thank you in advance for your consideration.
 
                 </p>
 <br>
                 <p id="sender-container">
 
                     Yours sincerely,
+<br><br>
+                    <input type="text" name="sender-name" id="sender-name" placeholder="Enter your name here" spellcheck="false" autocomplete="false">
 <br><br><br><br><br>
                     <span>Parent's Signature</span>
-<br><br><br>
-                    Sender's Name: <input type="text" name="sender-name" id="sender-name" placeholder="Enter your name here" spellcheck="false" autocomplete="false">
 
                 </p>
 
             </div>
 <br>
-                <div id="button-container">
+            <div id="button-container">
 
-                    <button onclick="window.print();">Print Letter</button>
+                <button onclick="letter_preview()">Preview Letter</button>
 
-                </div>
+            </div>
 <br><br>
         </main>
+
+        <div id="letter-preview" style="display: none;">
+
+            <p id="date-preview">Date: </p>
+<br>
+            <p id="receiver-preview">
+
+                To
+<br>
+                <p id="receiver-name-preview"></p>
+
+                <p id="receiver-address-preview"></p>
+
+            </p>
+<br>
+            <p id="subject-preview">Subject: </p>
+<br>
+            <p id="letter-body-preview" style="display: inline;">
+
+                Dear Sir/Ma'am,
+<br><br>
+                I am writing this letter to inform you of a medical issue which renders me unable  to attend school. I am suffering from <p id="disease-preview" style="display: inline;"></p> and my doctor has advised me <p id="days-preview" style="display: inline;"></p> days of complete bed rest to help me recover from the uneasiness quickly.
+<br>
+                I will be very thankful if you will grant me a <p id="ask-days-preview" style="display: inline;"></p> day(s) leave from <p id="leave-date-preview" style="display: inline;"></p>. I thank you in advance for your consideration.
+
+            </p>
+<br>
+            <p id="sender-preview">
+
+                Yours sincerely,
+<br><br>
+                <p id="sender-name-preview"></p>
+<br><br><br><br><br>
+                <span>Parent's Signature</span>
+
+            </p>
+
+        </div>
 
         <footer id="footer">
 
