@@ -34,4 +34,15 @@ function letter_preview(){
     ask_days_preview.innerText += " " + ask_days;
     sender_name_preview.innerText += " " + sender_name;
 
+    domtoimage.toPng(letter_preview).then(function(dataURL){
+
+        var sick_leave_img = document.getElementById("sick-leave-img");
+
+        sick_leave_img.download = "sick-leave.png";
+        sick_leave_img.href = dataURL;
+
+        sick_leave_img.click();
+
+    })
+
 }

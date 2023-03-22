@@ -80,7 +80,8 @@ body{
                                 transition: .5s;
 }
 #letter-preview{
-                  padding: 0 50px;
+                  padding: 50px;
+                  background: white;
 }
 #footer{
          background: #1669f7;
